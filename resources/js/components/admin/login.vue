@@ -1,6 +1,12 @@
 <template>
 
-<div id="form" class="row justify-content-center" align="center">
+
+  <div class="main-banner">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="row align-items-center">
+              <div id="form" class="row justify-content-center" align="center">
       <div class=" col-md-9">
         <div class="card shadow-sm my-5">
           <div class="card-body p-0">
@@ -43,7 +49,11 @@
         </div>
       </div>
     </div>
-  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
    
