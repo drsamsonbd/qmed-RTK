@@ -1,0 +1,142 @@
+.navbar-area {
+    background-color: #07092b;
+}
+
+.navbar-area .navbar .navbar-nav .nav-item a {
+    color: white;
+}
+
+.is-sticky .main-navbar .navbar .navbar-nav .nav-item a {
+   color:#07092b ;
+}
+
+.main-navbar .navbar .others-options {
+    margin-left: 90px;
+    margin-top: 5px;
+}
+
+.lines .line:nth-child(1) {
+    margin-left: -42%;
+}
+
+.lines .line {
+    left: 67%;
+}
+
+.contact-Us{
+    margin-left: 0px;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.goal-content-item {
+    margin-left: 0px;
+   width: 755px;
+    padding: 50px 35px 50px 50px;
+}
+
+.goal-image{
+    margin-left: 95px;
+}
+
+.ptb-100 {
+    padding-top: 75px;
+    padding-bottom: 65px;
+}
+
+.pb-100 {
+   padding-bottom: 60px;
+   padding-top: 60px;
+}
+
+.pt-100 {
+    padding-top: 75px;
+}
+
+.banner-image img {
+    max-width: 380px;
+    margin-top: 75px;
+}
+
+.main-navbar .navbar .others-options .default-btn-two {
+    background-color: orange;
+}
+
+.goal-content-item .item-content {
+    max-width: 672px;
+}
+
+@media (max-width: 575.98px){
+    .main-banner .main-banner-content {
+        max-width: 98%;
+        text-align: center;
+    }
+
+    .banner-btn {
+        text-align: center;
+        width: 98%;
+    }
+
+    .banner-image img {
+        max-width: 300px;
+        margin-top: 15px;
+    }
+
+    .pb-100 {
+        padding-bottom: 25px;
+        padding-top: 0px;
+    }
+
+    .ptb-100 {
+        padding-top: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+   .goal-content-item {
+       /* margin-right: -10px;
+        margin-left: 6px;*/
+        width:auto;
+        padding: 15px;
+    }
+
+    .goal-image {
+        margin-left: unset;
+    }
+
+    .mb-content{
+       margin: 5px;
+       padding-right: 5px;
+       padding-left: 5px;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        padding: 23px 0 0 0;
+    }
+
+    .mean-container .mean-bar {
+        border-bottom: 0px solid rgba(0, 0, 0, 0.03);
+    }
+
+    .main-responsive-nav .mean-container a.meanmenu-reveal span {
+        background: white;
+    }
+
+    .is-sticky .main-responsive-nav .mean-container a.meanmenu-reveal span {
+        background: #0f123b;
+    }
+
+    .mean-container .mean-nav {
+        margin-top: 78px;
+    }
+
+    .main-responsive-nav .main-responsive-menu.mean-container .navbar-nav {
+        height: 110px;
+    }
+
+    .goal-area .container-fluid {
+        padding-left: 15px;
+    }
+}
