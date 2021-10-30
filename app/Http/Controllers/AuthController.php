@@ -28,12 +28,12 @@ class AuthController extends Controller
     public function login(Request $request)
     {
          $validateData = $request->validate([
-         'ic' => 'required',
+         'email' => 'required',
          'password' => 'required',
          
          ]);
 
-        $credentials = request(['ic','password']);
+        $credentials = request(['email','password']);
 
         if (! $token = auth()->attempt($credentials)) {
             return response()->json(['error' => 'Invalid credential!'], 401);
@@ -83,16 +83,14 @@ class AuthController extends Controller
            $request->validate([
                 'email'=>'required|unique:users|max:255',
                 'name'=>'required',
-                'ic'=>'required|unique:users|max:16',
                 'password'=>'required|min:6|confirmed',
-                'roles'=>'required',
+                'roles'=>'',
             
 
             ]);
             $data = array();
             $data['name'] = $request->name;
             $data['email'] = $request->email;
-            $data['ic'] = $request->ic;
             $data['password'] = Hash::make($request->password);
             $data['roles'] = $request->roles;
             DB::table('users')->insert($data);
@@ -120,22 +118,6 @@ class AuthController extends Controller
         ]);
     }
     
-    public function getAuthenticatedUser()
-    {
-      try {
-        if (! $user = JWTAuth::parseToken()->authenticate()) {
-            return response()->json(['user_not_found'], 404);
-        }
-    } catch (Tymon\JWTAuth\Exceptions\TokenExpiredException $e) {
-        return response()->json(['token_expired'], $e->getStatusCode());
-    } catch (Tymon\JWTAuth\Exceptions\TokenInvalidException $e) {
-        return response()->json(['token_invalid'], $e->getStatusCode());
-    } catch (Tymon\JWTAuth\Exceptions\JWTException $e) {
-        return response()->json(['token_absent'], $e->getStatusCode());
-    }
 
-    $userRole = $user ->roles;
-    return response()->json($userRole);
-    }
 
 }

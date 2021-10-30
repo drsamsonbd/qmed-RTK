@@ -2,7 +2,7 @@ let login = require('./components/auth/login.vue').default;
 let register = require('./components/auth/register.vue').default;
 let forget = require('./components/auth/forget.vue').default;
 let home = require('./components/Dashboard.vue').default;
-
+let signup = require('./components/auth/signup.vue').default;
 let logout = require('./components/auth/logout.vue').default;
 
 //pentadbir
@@ -25,6 +25,7 @@ let discipline= require('./components/settings/discipline.vue').default;
 let user_main= require('./components/User-Page/main.vue').default;
 export const routes = [
     { path: '/login', component: login, name: 'login' },
+    { path: '/signup', component: signup, name: 'signup' },
     { path: '/register', component: register, name:'register' },
     { path: '/forget', component: forget, name:'forget' },
     { path: '/logout', component: logout, name:'logout' },

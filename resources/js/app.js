@@ -86,8 +86,15 @@ Vue.component('container', require('./components/nav/TheContainer').default);
 Vue.component('vue-navbar', require('./components/nav/TheSideBar').default);
 Vue.component('vue-footer', require('./components/nav/TheFooter').default);
 Vue.component('landing', require('./components/Landing').default);
+Vue.component('bottom-nav', require('./components/nav/BottomNav').default);
+Vue.component('user-main', require('./components/User-Page/UserMain').default);
+
+
+import VueBottomNavigation from "bottom-navigation-vue";
+Vue.use(VueBottomNavigation);
 
 const app = new Vue({
+
     el: '#app',
     router
 });

@@ -16,7 +16,7 @@
                 <div class="main-responsive-menu">
                     <div class="logo">
                         <a href="#">
-                            <img src="assets/img/Logo/Logo.png" alt="logo">
+                            <img src="assets/img/Logo/qmLogo.png" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar">
                     <a class="navbar-brand" href="#">
-                        <img src="assets/img/Logo/Logo.png" alt="logo">
+                        <img src="assets/img/Logo/qmLogo.png" alt="logo">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu col-md-8" id="navbarSupportedContent">
@@ -175,6 +175,4 @@ export default {
 
 
 
-</script>
-}
 </script>

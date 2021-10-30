@@ -8,6 +8,8 @@ Route::group([
 //chartApi
 Route::apiResource('/admissionChart', 'Api\ChartController');
 Route::get('/dischargeChart', 'Api\ChartController@discharge');
+Route::get('/UserPage', 'Api\UserPageController@index');
+Route::get('/welcome', 'LandingPageController@index');
 
 
 //statistics APi
